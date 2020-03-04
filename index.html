@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Really Large URL</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://kit.fontawesome.com/9fdd9b9a5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Really Large URL</a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text">Really Large URL</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Ever needed a URL lengthener? Well, now your dreams have come true!</h5>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+        <input id="shorturl" maxlength="1400" placeholder="enter your URL" />
+      </div>
+      <div class="row center">
+        <button onclick="lengthen()" class="waves-effect blue btn">Lengthen</button>
+      </div>
+      <div class="row center">
+        <div class="col s11">
+          <input id="longurl" disabled/>
+        </div>
+        <div class="col s1">
+          <a href="javascript:copy();"><i class="material-icons">content_copy</i></a>
+        </div>
+
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col m4 s12">
+          <p class="white-text">Created by Isaac Nicholas</p>
+        </div>
+        <div class="col m4 s12">
+          <p class="white-text"><i class="fab fa-twitter"></i> <a class="white-text" target="_blank" href="https://reallylargeurl.com/rGOxEtlEHmsQaVUlDsVldH7KcQPfePaj021U2FsdGVkX1/ZH1ME2gm8OrCOOX39lvHGCQ1xQg3w4xsIJQhbps4xyDQTG28GXORDMlQr9JjFgvx823YTxOX5DQsPRqFhmk1KHwsfRUOBK7VFIccoah+/9gfO1xZSnkjHD1xnus4Ek91qNwBbedjNg7LFaFhYg6JSSiHvjaulO4Cqgb0zAdYbPmWSndcIEwp5xssLqGEwzC/9YJdQFGP3gLYraVSOY2Tftw4tMT5DFjtFoM6pycEJ3R3dU7nP/TwEbuXi8tqV6pLlb/B1Th1FGkFuk2/Em/UPh3HKg/vbe1xOI8r8yVju8I5tj7V0fs35BAoyA29sbVg19EjwRTSgDQL3AW+miS+A3a76sCPdp0zcusKrRGlQeEl6V6MOOKUKNK2X1al5SJqNjGzfOarE4Sz1ByUDjr9ja4iTVyYZGy+JnK/nx3T0Tu8YxD0b0d+6h4a/D6rQKfRBFK1hFzNYc8RRSwjBHLhze3ubX9a4sqSBsYNLBDm9Vp0C7LSGHpkM4Y1zim22fKbrsNUyXDNluuCCU8zx1aAmWgRmm40kTYyt7ePAKmGQ2oLiytDj8MQaXvtwga3+dPFjZqDOC+S/BUJR/XM+AqUJVfcWJILPaUhl3NVq6+ca0aoFw7TrgHTAzflt8r6x6jf7FmQ3GSjm1S7gHfb3yuXy7ku46y+RXq5DTkPHz5W43fmDlfKu54Rzjumo53qW5d8NADasDg/7iGZWNI4CdH6H+D2AXDOjyxSwA5jSmWwDcDoOptkjnMEv7xzHK7K/AGnnp3Ha+TTV/UtGUsOUecF0piUWuV8O/m4f8yvhdcyduznyiLs6yas89nOeZmBh9pQn8Go+Sdp7gqS5atNBiylvqX34GOsfCI6yt4t413R400pNbcA3HEkJvWA1AwCvR9hvFmXj3DQ6obLWibdi9FFN04sza5Kb8FKfhdlz4VoJzHkZg5dM4c2UqISn8ffTxbF8ymdQIzxnaj+tgOdPxo337ce9c+ink3mXjOdL70nn1coAaYfYwtikoI5mNBx5CYOwVx1pVocDrkvGFAFmGjVbAL2iJefyEAskXDfUAHYkkJwbm+6g8lnVq+PcA+yZSIwDf/HLioB7/ECBYP/Rl23XvDP3zHRsuqmmSK8lh81jG5MGE1pyrt7ZvI22xIZehzqT6jN1ClwVMDcfhaM14pMkyoGhW0/E4aRLJjKDXjOZh4wTWXylwVsQHscu1n2NPcfvrTahpZ9V0c1q/sj5WcZe0TxpoMMSqMpTrAOzDedzNqEzXn2ZfKNlsvLpPXFYbIciKowNGddZ5Qg7qCLI1424yIioo2T9G4Hlht8d5td+qDNtcq2ojOd9FuotirexEZgEgV7a65fFISuMEg3aYcqtPSdYt9EIY7Ej56SkLSYuSDEISdrzJJYY58S9TnkBEN0iqeDaCof6SWjDmeTV2C+vo4zQb9o8JW08Xx6sQ/IiveZosv8tDZsbk/tDfgGms/UR144TaNQjChgfL28S1AWEHGkEb0qlrCp4QsIX2/ScTKJ6LNnTAQRUQqNBwQx7ILyd3w25QN7CCG3DyPsnQ+s798MNBsLrxEagDSp4fZFcJOhd16uZ/uUAFY9YBWrlzy6P6pTrtlhlZvyeDlVcB3H3mtpkuYHc7zVhJaMvqKVkZuHZWCJJR/TOFsy2H92k/cEhcMGvEXiwoig8MCFGS4+028O4XbJI7+p3Hlt5aeRrBcxdQSnNeNTifI9lCqD9uuolnkeTJxeSfzJCZ/SA0vObumPdl+KsoySxfbG0tsM9HUvsBMDPp2tZ8Pd8vmHjuSBjZgej17rMQLhxV8Yn4uJHyIUPBe9iLeL28D5MgZdpZ7gP9cBRMnqpnOvLzs2wvc9cuGTlys9+geEmaLB/ThE3HIwDGqKC7b8=">@12muffinslater</a></p>
+        </div>
+        <div class="col m4 s12">
+          <p class="white-text"><i class="fab fa-github"></i> <a class="white-text" target="_blank" href="https://reallylargeurl.com/egJNx6GU5BsBmGiqO5o8nFORKUiL5nqC020U2FsdGVkX19+GG5SK+JZZbqgaQuPE4e3jr8HHPi6jA3hW/PAwz8nIOj9o7LZ2ebccmmwd3H8OQXSfjaEecZzgrSOCAJdISZfFsmHZAj1pNBFpw6+64kkDlaBk0d23K9kY9028nkUDBLdw1qWiN4JsF1/z0iB2go6vQ6dYx3kPAaRUBHEecRSC0O8kREmKYrE247DMQvwUwIFtZpzVRVKTAqGBbGaFVo9FRoWCNoT4xBhxKwfs81y54KxmKuyQOZq3CGTmMbtSAMHc5aeshg/U12/eYJL45OXqKHx9kPRSCIwXoxMo7Mjp5SlVFtzPndwZ1Ug95w0BFXsxA7p/B/0wGK9dl82OGLqnRPos0Wp1cCo8FJxVjOEtkYDjSIvGWgN2pNV3gtGqowCAlf+AypS7BrHp7xJAVN8T3Elz6Bjyau777/Eht+xACn8C1SCFI+rF5cbBhY7QvqqWCpvbaiw9eSkYyAe+8SrWGEkHOcTpvO+g25gVGyJ8OPwMZcg7RThtTAlPQp4VYxVVtqPDRc+TOHncyGTCtMeVsduXNZpvCRU2Hyey8joYo78mM6rapG8rdtb5eDQe6jOCIK3IPU+B+TYO0V+SX6hOvLyP8+fqnJvJgPjhvnaC1FwB0x5M1i/2iUg2ri6zwN7gKzAofcHNOLf/QcyOLjWKqryHhlVtNuBVuSt3ihbQ+oOLt8fJUsRk/sn7sXP5c2NWsROUhj9J3qny4K3BfsPP0nMwUE6bcxazQbUEDlamrC2W081/x5nwfKtTfZraF/2p+IAUx+YFaAAEaWO1+8kWtLGH3MADynyOiCTDEsBlp4b9ZGfrUeLNkz5vRU+lakq3XtB3aK2Ta20ZEEzbVze8InPRSEjIKHUludncNFNCi+zt6oc3m5gClBFBS8UgZk+Snmo5Tbds0E3fSbrrslioIwBhnD2M3rd6oGXlgo8+67095KVJI6QtG9EVfgKNaB6zuD0R2fBpBmiewxpa6pnkZuSEnxohAuV+uVO3NHzNowtk4zHisUim5QSFuYs4Q3b8G/lPE+soR3lryPl9Vnn69kveMLuNk5efgpM10aJVPJ6f+m321oCS7GB1npvtU5doWawVANkTT99DCbUfJ/TJk4/1eOxSHJZm0BtsnzshyHzeJ6u4KliUnuzmrOocyAsTcFQuIvo+jlv/RI+x7L3Vy2vdbaVy9oH+xpHMddQz8UEe/9u2DaK7vUGGo2Iro99pqL6PA+Jx+pMSriVSIexSsWVi6WQobal2uMoFXAam0GDRxkyAeB66s4k30An0p/UdgrX/5WjW3rQPFSusnxlskjHfNJD3YWJpoa6Ne8VVxIrDKK7zbjxDvMjcc+6M9pOcWtr1WP2r2TYz0xbOrJ3EkttfnFOCFda3UZT2rnUBcBuRSJ9HCMB9icurVSxl4b8s3fMq2kOgWE3fKsT/httrUwmzr+TFKzQXfxSwp5gP8SjC6UhsS8oQWfrqL2Ib3F/ICVO815Q0FpnCcoLC5WEIFIdqdRQhgryUGNllFLOZwPZYwrG6Unmd8H6ZhHJnV+PzBgIXr52hk3Yp+tlDrbkZtuGHf84WFKX5XtB0Ic6tlESuw3FGJvFId3KzfBsCqorVDElu/Edjr5LLEAXjswxm1aWCA7guOwwWTcNsW+NBWvLoBR1DyJraa+dBJCVNYPXXm9jj2j93GtddWzYjLwaRUyI03cPGvUX3LnyPSpO1XcHqpQiqOmHW4nG3I5HK4SfWzzSNiEdi/aSuspjwmgBUueonEiHFAqJ8qqvKQ6ISUnnVEXb5fv438KZeX9TCW1CMYtFqy38EiJoHZ+MXPWlvSiktkJqMn8DaEyezJvHIBxXjRx9c4aCznmKoRQ/ihFhIWdIKWUd67T9UDpnUbg5H/C/S+PjC3Y=">@isaacnicholas</a></p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+  </body>
+</html>
