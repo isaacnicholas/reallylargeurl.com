@@ -38,6 +38,13 @@ function lengthen(){
     shorturl = CryptoJS.AES.encrypt(shorturl, key);
     longurl = "https://reallylargeurl.com/"+key+numberstring+shorturl;
     document.getElementById('longurl').value = longurl;
+    var _img = document.getElementById('qr');
+    var newImg = new Image;
+    newImg.onload = function() {
+        _img.src = this.src;
+    }
+    var qrurl = longurl.replace(/\+/g,"%2B");
+    newImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=400x400&data='+qrurl;
 }
 
 function copy(){
@@ -50,3 +57,13 @@ function copy(){
   document.execCommand("copy");
   document.body.removeChild(copything);
 }
+
+document.getElementById('shorturl').addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    lengthen();
+  }
+});
